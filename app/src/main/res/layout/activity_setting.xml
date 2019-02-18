@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.play.ata.weather.SettingActivity"
+    android:weightSum="1" android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/la"
+            android:onClick="back"
+            android:background="#00ffffff"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:layout_toRightOf="@+id/imageButton2"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Setting"
+            android:textColor="#ffffff"
+            android:textIsSelectable="false"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City :" android:background="@drawable/up_pack"
+        android:textSize="20sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/down_pack">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="25dp"/>
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/bOkCity2"
+            android:layout_toStartOf="@+id/bOkCity2"
+            android:ems="10"
+            android:hint="Enter Your City"
+            android:inputType="text"
+            android:background="@drawable/ebackground"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/bOkCity2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Ok"
+            android:onClick="CityOk"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bbackground"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:text="You want to allow Notification"
+        android:textSize="20dp"
+        android:background="@drawable/up_pack"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/down_pack"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="25dp"/>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#ffffff" />
+
+        <Button
+            android:id="@+id/ON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification ON"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/view"
+            android:background="@drawable/bbackground2"
+            android:textAllCaps="true"
+            android:onClick="Notifyset"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/OFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification OFF"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/view"
+            android:background="@drawable/bbackground"
+            android:textAllCaps="true"
+            android:onClick="Notifyoff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
